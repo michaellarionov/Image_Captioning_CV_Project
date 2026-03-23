@@ -36,7 +36,7 @@ export default function App() {
     formData.append('image', selectedImage)
 
     try {
-      const response = await axios.post('http://localhost:5000/caption', formData, {
+      const response = await axios.post('http://localhost:5001/caption', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       })
       setCaption(response.data.caption)

@@ -6,7 +6,8 @@ from src.model import VisionScript
 
 def load_model(checkpoint_path, device):
     model = VisionScript(freeze_encoder=False)
-    model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+    # Load to CPU first to avoid MPS memory alignment issues, then move to device
+    model.load_state_dict(torch.load(checkpoint_path, map_location='cpu'))
     model.to(device)
     model.eval()
     return model
