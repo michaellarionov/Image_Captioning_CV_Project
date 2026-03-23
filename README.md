@@ -81,6 +81,7 @@ Image_Captioning_CV_Project/
 - Python 3.9+
 - Node.js 18+
 - A CUDA GPU, Apple MPS, or CPU
+- macOS, Linux, or Windows
 
 ### 1. Clone the repo
 
