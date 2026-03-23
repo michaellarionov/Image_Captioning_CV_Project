@@ -69,7 +69,7 @@ Image_Captioning_CV_Project/
 │       └── src/
 │           └── App.jsx # Drag-and-drop UI with live captioning
 ├── models/
-│   └── visionscript_final.pt  # Trained model weights (download separately — see README)
+│   └── visionscript_final.pt  # ← place downloaded model weights here (not in repo)
 └── data/
 ```
 
@@ -120,7 +120,7 @@ mv ~/Downloads/visionscript_final.pt models/visionscript_final.pt
 Move-Item "$env:USERPROFILE\Downloads\visionscript_final.pt" models\visionscript_final.pt
 ```
 
-> The `models/` directory is listed in `.gitignore` — the weights will not be committed to the repo.
+> Model weights (`*.pt` files) are listed in `.gitignore` — the weights will not be committed to the repo. The `models/` directory itself is tracked and will be present after cloning.
 
 ---
 
