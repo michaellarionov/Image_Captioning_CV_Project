@@ -28,6 +28,12 @@ MODEL_PATH = os.path.join(
     'models', 'visionscript_final.pt'
 )
 
+if not os.path.exists(MODEL_PATH):
+    print(f"\n❌ Model file not found at: {MODEL_PATH}")
+    print("Please download the model from the link in the README and place it in the models/ directory.")
+    print("Expected file: models/visionscript_final.pt\n")
+    sys.exit(1)
+
 model = load_model(MODEL_PATH, device)
 print("✅ Model loaded and ready")
 
