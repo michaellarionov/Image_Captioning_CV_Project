@@ -69,7 +69,7 @@ Image_Captioning_CV_Project/
 │       └── src/
 │           └── App.jsx # Drag-and-drop UI with live captioning
 ├── models/
-│   └── visionscript_final.pt  # Trained model weights (not tracked in git)
+│   └── visionscript_final.pt  # Trained model weights (download separately — see README)
 └── data/
 ```
 
@@ -104,9 +104,24 @@ npm install
 
 ---
 
+## Model Weights
+
+The trained model weights are too large to store in this repository (~500 MB). Download them from Google Drive and place the file at `models/visionscript_final.pt`.
+
+**[⬇️ Download visionscript_final.pt](https://drive.google.com/file/d/1Dlx_BcNqqbeO_jS28My4zmhwyKNSTv5m/view?usp=share_link)**
+
+```bash
+# After downloading, move the file into the models/ directory
+mv ~/Downloads/visionscript_final.pt models/visionscript_final.pt
+```
+
+> The `models/` directory is listed in `.gitignore` — the weights will not be committed to the repo.
+
+---
+
 ## Running the Web App
 
-You'll need a trained model checkpoint placed at `models/visionscript_final.pt`.
+You'll need a trained model checkpoint placed at `models/visionscript_final.pt` (see [Model Weights](#model-weights) above).
 
 **Terminal 1 — Flask backend:**
 ```bash
