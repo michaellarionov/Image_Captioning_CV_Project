@@ -111,8 +111,13 @@ The trained model weights are too large to store in this repository (~500 MB). D
 **[⬇️ Download visionscript_final.pt](https://drive.google.com/file/d/1Dlx_BcNqqbeO_jS28My4zmhwyKNSTv5m/view?usp=share_link)**
 
 ```bash
-# After downloading, move the file into the models/ directory
+# macOS / Linux — After downloading, move the file into the models/ directory
 mv ~/Downloads/visionscript_final.pt models/visionscript_final.pt
+```
+
+```powershell
+# Windows (PowerShell) — After downloading, move the file into the models/ directory
+Move-Item "$env:USERPROFILE\Downloads\visionscript_final.pt" models\visionscript_final.pt
 ```
 
 > The `models/` directory is listed in `.gitignore` — the weights will not be committed to the repo.
