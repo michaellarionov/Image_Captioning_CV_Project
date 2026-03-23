@@ -1,4 +1,4 @@
-# VisionScript 🖼️→📝
+# VisionScript AI
 
 **AI-powered image captioning using ResNet-50 + GPT-2**
 
