@@ -104,7 +104,7 @@ if __name__ == '__main__':
         'image_dir':        '/content/train2017',
         'annotation_file':  '/content/annotations/captions_train2017.json',
         'checkpoint_dir':   '/content/drive/MyDrive/visionscript/models',
-        'batch_size':       8,
+        'batch_size':       16,
         'learning_rate':    3e-4,
         'epochs':           5
     }
