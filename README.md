@@ -93,7 +93,7 @@ cd Image_Captioning_CV_Project
 ### 2. Install Python dependencies
 
 ```bash
-pip install torch torchvision transformers flask flask-cors pillow tqdm
+pip install torch torchvision transformers flask flask-cors pillow pillow-heif tqdm
 ```
 
 ### 3. Install frontend dependencies
@@ -218,5 +218,6 @@ transformers
 flask
 flask-cors
 pillow
+pillow-heif
 tqdm
 ```

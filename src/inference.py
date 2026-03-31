@@ -1,8 +1,11 @@
 import torch
 from PIL import Image
+from pillow_heif import register_heif_opener
 from torchvision import transforms
 from transformers import GPT2Tokenizer
 from src.model import VisionScript
+
+register_heif_opener()
 
 def load_model(checkpoint_path, device):
     model = VisionScript(freeze_encoder=False)

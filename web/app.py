@@ -3,7 +3,6 @@ from flask_cors import CORS
 import torch
 import sys
 import os
-import tempfile
 from transformers import GPT2Tokenizer
 
 # Add project root to path
@@ -49,8 +48,7 @@ def caption():
         return jsonify({'error': 'No image selected'}), 400
 
     # Save to temp file
-    with tempfile.NamedTemporaryFile(delete=False, suffix='.jpg') as tmp:
-        temp_path = tmp.name
+    temp_path = '/tmp/upload_image.jpg'
     image_file.save(temp_path)
 
     # Generate caption
